@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+
+    <record id="report_t_and_c" model="ir.ui.view">
+        <field ref="base.act_report_xml_view" name="inherit_id"/>
+        <field name="model">ir.actions.report</field>
+        <field name="name">Terms Condition on report</field>
+        <field name="priority">90</field>
+        <field type="xml" name="arch">
+            <xpath expr="//page[@name='advanced']/group" position="inside">
+                <field name="apply_t_and_c"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
